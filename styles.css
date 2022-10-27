@@ -1,0 +1,50 @@
+html {
+  
+  box-sizing: border-box;
+}
+
+#header-img{
+  position: fixed; 
+  top: 8px;
+  left: 16px;
+  font-size: 10px;
+   width: 150px;
+  height: auto;
+}
+
+#nav-bar{
+  position: fixed; 
+  top: 0; 
+  float: right;
+}
+}
+ body{
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+  #one, #two, #three{
+   padding-top: 20px;
+   text-align: center;
+ }
+ #submit{
+   background-color: orange;
+ }
+ #three{
+ display: flex;
+ flex-shrink: 3;
+  grid-template-columns: minmax(min-content, 94rem) minmax(min-content, 94rem) minmax(min-content, 94rem);
+  row-gap: 3rem;
+
+}
+@media only screen and (max-width: 720px) {
+  #three {
+    grid-template-columns: 1fr;
+  }
+}
+#video{
+  width: 320px;
+  height: 240px;
+}
